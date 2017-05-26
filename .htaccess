@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(.*)\.asc$ server/trunk/exec.php?file=$1.asc [L]
+RewriteRule ^/.htaccess$ - [G]
